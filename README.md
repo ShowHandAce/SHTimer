@@ -16,7 +16,7 @@
 # 使用
 ### SHTimer
 
-`SHTiemr` 提供了两个初始化方法
+`SHTimer` 提供了两个初始化方法
 
 ```objc
 /**

@@ -15,6 +15,9 @@
 		442C7B8E1FC2766B00E8FFE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442C7B8D1FC2766B00E8FFE5 /* main.m */; };
 		442C7B981FC2766B00E8FFE5 /* SHTimerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 442C7B971FC2766B00E8FFE5 /* SHTimerDemoTests.m */; };
 		442C7BA31FC2766B00E8FFE5 /* SHTimerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 442C7BA21FC2766B00E8FFE5 /* SHTimerDemoUITests.m */; };
+		442C7BB31FC2771200E8FFE5 /* SHTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 442C7BB21FC2771100E8FFE5 /* SHTimer.m */; };
+		442C7BB71FC2793E00E8FFE5 /* SHTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442C7BB51FC2793E00E8FFE5 /* SHTimerViewController.m */; };
+		442C7BB81FC2793E00E8FFE5 /* SHTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 442C7BB61FC2793E00E8FFE5 /* SHTimerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		442C7B9E1FC2766B00E8FFE5 /* SHTimerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHTimerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		442C7BA21FC2766B00E8FFE5 /* SHTimerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTimerDemoUITests.m; sourceTree = "<group>"; };
 		442C7BA41FC2766B00E8FFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442C7BB11FC2771100E8FFE5 /* SHTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTimer.h; sourceTree = "<group>"; };
+		442C7BB21FC2771100E8FFE5 /* SHTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTimer.m; sourceTree = "<group>"; };
+		442C7BB41FC2793E00E8FFE5 /* SHTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHTimerViewController.h; sourceTree = "<group>"; };
+		442C7BB51FC2793E00E8FFE5 /* SHTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHTimerViewController.m; sourceTree = "<group>"; };
+		442C7BB61FC2793E00E8FFE5 /* SHTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHTimerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,12 @@
 		442C7B7D1FC2766B00E8FFE5 /* SHTimerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				442C7BB01FC2771100E8FFE5 /* SHTimer */,
 				442C7B7E1FC2766B00E8FFE5 /* AppDelegate.h */,
 				442C7B7F1FC2766B00E8FFE5 /* AppDelegate.m */,
+				442C7BB41FC2793E00E8FFE5 /* SHTimerViewController.h */,
+				442C7BB51FC2793E00E8FFE5 /* SHTimerViewController.m */,
+				442C7BB61FC2793E00E8FFE5 /* SHTimerViewController.xib */,
 				442C7B811FC2766B00E8FFE5 /* ViewController.h */,
 				442C7B821FC2766B00E8FFE5 /* ViewController.m */,
 				442C7B841FC2766B00E8FFE5 /* Main.storyboard */,
@@ -131,6 +143,15 @@
 			);
 			path = SHTimerDemoUITests;
 			sourceTree = "<group>";
+		};
+		442C7BB01FC2771100E8FFE5 /* SHTimer */ = {
+			isa = PBXGroup;
+			children = (
+				442C7BB11FC2771100E8FFE5 /* SHTimer.h */,
+				442C7BB21FC2771100E8FFE5 /* SHTimer.m */,
+			);
+			path = SHTimer;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -199,7 +220,7 @@
 				TargetAttributes = {
 					442C7B7A1FC2766B00E8FFE5 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					442C7B921FC2766B00E8FFE5 = {
 						CreatedOnToolsVersion = 9.1;
@@ -239,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				442C7B8B1FC2766B00E8FFE5 /* LaunchScreen.storyboard in Resources */,
+				442C7BB81FC2793E00E8FFE5 /* SHTimerViewController.xib in Resources */,
 				442C7B881FC2766B00E8FFE5 /* Assets.xcassets in Resources */,
 				442C7B861FC2766B00E8FFE5 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442C7BB31FC2771200E8FFE5 /* SHTimer.m in Sources */,
+				442C7BB71FC2793E00E8FFE5 /* SHTimerViewController.m in Sources */,
 				442C7B831FC2766B00E8FFE5 /* ViewController.m in Sources */,
 				442C7B8E1FC2766B00E8FFE5 /* main.m in Sources */,
 				442C7B801FC2766B00E8FFE5 /* AppDelegate.m in Sources */,
@@ -430,11 +454,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GH3WD8CYKW;
 				INFOPLIST_FILE = SHTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShowHandAce.SHTimerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c6f4f1bf-d71a-4cfe-b384-854992270a50";
+				PROVISIONING_PROFILE_SPECIFIER = "Wildcard Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +471,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SHTimerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShowHandAce.SHTimerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
